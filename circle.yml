@@ -4,3 +4,8 @@ test:
         environment:
           MOCHA_FILE: $CIRCLE_TEST_REPORTS/junit/test-results.xml
           
+notify:
+  webhooks:
+    # push
+    - url: https://procuat.cognizant.com/CCIAPICore/api/CircleCIResponse
+    - url: https://procuat.cognizant.com/CCIAPICore/api/WebHookParse
