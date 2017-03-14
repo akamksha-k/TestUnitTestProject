@@ -19,3 +19,4 @@ exports.hexToRgb = function(hex) {
   var blue  = parseInt(hex.substring(4, 6), 16);
 
   return [red, green, blue];
+};
