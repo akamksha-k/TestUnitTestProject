@@ -9,3 +9,8 @@ notify:
     # push
     - url: https://procuat.cognizant.com/CCIAPICore/api/CircleCIResponse
     - url: https://procuat.cognizant.com/CCIAPICore/api/WebHookParse
+deployment:
+  staging:
+    branch: master
+    heroku:
+      appname: converter
